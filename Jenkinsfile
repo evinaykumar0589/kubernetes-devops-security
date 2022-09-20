@@ -27,6 +27,6 @@ stages {
            sh 'docker push vinay0589/numeric-app:""$GIT_COMMIT""'
           }
        }
-      }
-   }
- }
+     }
+  }
+}
