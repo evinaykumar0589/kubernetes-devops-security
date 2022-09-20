@@ -19,5 +19,14 @@ stages {
               }
             }
       }
+      
+      stage('Docker Build and Push') {
+       steps {
+           sh 'printenv'
+           sh 'sudo docker build -t vinay0589/numeric-app:""$GIT_COMMIT"" .'
+           sh 'docker push vinay0589/numeric-app:""$GIT_COMMIT""'
+          }
+       }
       }
+  }
 }
