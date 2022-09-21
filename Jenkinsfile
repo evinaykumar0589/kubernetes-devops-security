@@ -7,7 +7,6 @@ stages {
               sh "mvn clean package -DskipTests=true"
               archive 'target/*.jar' //so that they can be downloaded later
             }
-<<<<<<< HEAD
         }
       stage('Unit Test') {
             steps {
@@ -16,7 +15,6 @@ stages {
         }
    
     }
-=======
         }  
       stage('Unit Test - JUnit and Jacoco') {
             steps {
@@ -58,5 +56,4 @@ stages {
        }
    }
    }
->>>>>>> 4f8305e1c239174b07fad31ffff33b18fc0de143
 }
