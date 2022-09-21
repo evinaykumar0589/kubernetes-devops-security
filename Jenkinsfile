@@ -13,9 +13,7 @@ stages {
               sh "mvn test"
             }
         }
-   
     }
-        }  
       stage('Unit Test - JUnit and Jacoco') {
             steps {
               sh "mvn test"
@@ -55,3 +53,4 @@ stages {
           }
        }
      }
+}
