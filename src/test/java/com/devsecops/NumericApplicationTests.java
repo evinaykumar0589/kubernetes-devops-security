@@ -49,7 +49,7 @@ public class NumericApplicationTests {
 @Test
     public void welcomeMessage() throws Exception {
          this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk());
-                 .andExcept(content().string("kubernetes Devsecops"));
+                 .andExcept(content().string("kubernetes DevSecOps"));
     }
     
 
