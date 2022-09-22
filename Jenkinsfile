@@ -57,6 +57,7 @@ stages {
           }
        }
      }
+  }
   post { 
         always { 
            junit 'target/surefire-reports/*.xml'
@@ -65,5 +66,4 @@ stages {
            dependencyCheckPublisher pattern: 'target/dependency-check-report.xml'
            }
         }
-   }
 }
